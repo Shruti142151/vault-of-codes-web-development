@@ -1,0 +1,138 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f3e5f5, #e1bee7);
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #6a1b9a;
+}
+
+.subtitle {
+  text-align: center;
+  color: #9c27b0;
+  margin-bottom: 20px;
+}
+
+.entry-form input,
+.entry-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.entry-form button {
+  background: #9c27b0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.entry-form button:hover {
+  background: #7b1fa2;
+}
+
+.entry {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.entry h3 {
+  margin: 0 0 5px;
+  color: #4a148c;
+}
+
+.entry p {
+  margin: 0;
+}
+
+/* Floating buttons */
+.floating-button, .toggle-theme {
+  position: fixed;
+  bottom: 20px;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 999;
+}
+.floating-button {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  border-radius: 50%;
+  bottom: 30px;
+  right: 30px;
+  background-color: #8e24aa;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.floating-button:hover {
+  background-color: #6a1b9a;
+  transform: scale(1.1);
+}
+
+.toggle-theme {
+  left: 20px;
+  background-color: #ab47bc;
+  color: white;
+}
+
+.toggle-theme:hover {
+  background-color: #8e24aa;
+}
+
+/* Dark Mode */
+body.night {
+  background: #121212;
+  color: #eee;
+}
+
+body.night .entry {
+  background: #1e1e1e;
+}
+
+body.night input,
+body.night textarea {
+  background: #2c2c2c;
+  color: #fff;
+  border-color: #555;
+}
+
+body.night .entry-form button,
+body.night .floating-button,
+body.night .toggle-theme {
+  background: #4a148c;
+}
+
+textarea {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ height: 200px;
+ font-size: 16px;
+}

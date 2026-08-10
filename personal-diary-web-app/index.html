@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Diary</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>My Personal Diary</h1>
+    <p class="subtitle">Write, Reflect, Remember</p>
+
+    <div class="entry-form">
+      <input type="text" id="entryTitle" placeholder="Entry Title" />
+      <input type="date" id="entryDate" />
+      <textarea id="entryText" placeholder="Write something..."></textarea>
+      <button onclick="saveEntry()">💾 Save Entry</button>
+    </div>
+
+    <h2>Previous Entries</h2>
+    <div id="entriesContainer"></div>
+  </div>
+
+  <button class="floating-button" onclick="newEntry()">➕</button>
+  <button class="toggle-theme" onclick="toggleNightMode()">🌙 Toggle Night Mode</button>
+</body>
+</html>
