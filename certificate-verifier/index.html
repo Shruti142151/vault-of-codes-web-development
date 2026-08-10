@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VaultofCodes - Certificate Verifier (Dev)</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Empower Your Learning</h1>
+    <p>Explore our curated coding internships, programs, and resources.</p>
+    <a href="#features" class="btn-primary">Explore Now</a>
+  </div>
+</section>
+<!-- FEATURES SECTION -->
+<section class="features" id="features">
+  <h2 class="section-title">Why Choose Vault of Codes?</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>Real Internships</h3>
+      <p>Work on live projects that prepare you for the real world.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Skill Building</h3>
+      <p>Sharpen your coding, design, and project management skills.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Certificates</h3>
+      <p>Earn verifiable certificates for every successful completion.</p>
+    </div>
+  </div>
+</section>
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>What Makes Us Different?</h2>
+      <p>At Vault of Codes, we offer real-world project-based internships that bridge the gap between learning and applying. Our goal is to equip students like you with the skills, experience, and confidence needed to excel in tech careers.</p>
+    </div>
+    <div class="about-image">
+      <img src="https://img.freepik.com/free-vector/team-goals-concept-illustration_114360-5204.jpg" alt="About Us">
+    </div>
+  </div>
+</section>
+<!-- TESTIMONIALS SECTION -->
+<section class="testimonials" id="testimonials">
+  <h2 class="section-title">What Our Interns Say</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p>"Vault of Codes gave me my first real project. I now feel confident in applying for tech jobs!"</p>
+      <h4>– Ananya S.</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"The learning experience here is unmatched — everything is hands-on."</p>
+      <h4>– Rohan M.</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Best part? You actually work on real websites and get certified for it!"</p>
+      <h4>– Shruti K.</h4>
+    </div>
+  </div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <h2 class="section-title">Get in Touch</h2>
+  <form id="contactForm" class="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <p id="form-status"></p>
+  </form>
+</section>
+  <!-- Branding -->
+  <header class="brand-header">
+    <!-- Replace with your logo if needed -->
+  <a href="https://www.vaultofcodes.in/" target="_blank">
+  <img src="https://vaultofcodes.site/logo.png" alt="VaultofCodes Logo" class="brand-logo" />
+</a>
+    <h1 class="brand-title">VaultofCodes</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <input id="identifier" type="text" placeholder="Enter Email or ID"/>
+      <button onclick="verifyStudent()">Verify</button>
+    </div>
+
+    <div id="result"></div>
+    <div class="spinner hidden"></div>
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
